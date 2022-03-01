@@ -2,7 +2,7 @@ var Service = require('node-windows').Service;
  
 // Create a new service object
 var svc = new Service({
-  name:'apiuts',
+  name:'apimqtt',
   description: 'API para comunicação N4/Khomp',
   script: 'C:\\Users\\danto\\Documents\\Dev\\api-mqtt\\src\\index.js'
 });
