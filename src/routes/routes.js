@@ -44,7 +44,6 @@ function getValues(element, mac) {
           const sensor = 'TEMP'
           const topic = `GRU/UTS/${sensor}/${mac}`
           publishTopic(topic, v)
-          console.log(topic, v)
         }
         if (n === 'Humidity') {
           const sensor = 'HUM'

@@ -11,5 +11,6 @@ reconnectPeriod: process.env.MQTT_RECONNECTPERIOD,
 connectTimeout: process.env.MQTT_CONNECTTIMEOUT
 }
 
-const topic =process.env.MQTT_TOPIC
+const topic =process.env.MQTT_TOPIC.split(",")
+
 module.exports = { server, topic };
