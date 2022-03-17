@@ -4,7 +4,7 @@ var Service = require('node-windows').Service;
 var svc = new Service({
   name:'apimqtt',
   description: 'API para comunicação N4/Khomp',
-  script: 'C:\\Users\\danto\\Documents\\Dev\\api-mqtt\\src\\index.js'
+  script: 'C:\\api-mqtt\\src\\index.js'
 });
  
 // Listen for the "install" event, which indicates the

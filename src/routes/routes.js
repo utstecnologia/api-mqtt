@@ -36,7 +36,10 @@ function getValues(element, mac) {
       } = element
           const sensor = 'TIME'
           const topic = `${prefix}/${sensor}/${mac}`
-          publishTopic(topic, bt)
+          const date = new Date(bt*1000)
+          const convertedDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
+          console.log(convertedDate)
+          publishTopic(topic, convertedDate)
     }
     if (element.hasOwnProperty('n')) {
       if (element.hasOwnProperty('v')) {
